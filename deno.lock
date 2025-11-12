@@ -1,0 +1,50 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@cliffy/internal@1.0.0-rc.8": "1.0.0-rc.8",
+    "jsr:@cliffy/keycode@1.0.0-rc.8": "1.0.0-rc.8",
+    "jsr:@cliffy/keypress@^1.0.0-rc.8": "1.0.0-rc.8",
+    "jsr:@lambdalisue/ansi-escape-code@^1.0.4": "1.0.4",
+    "jsr:@neabyte/deno-ansi@0.1": "0.1.0",
+    "jsr:@std/assert@1": "1.0.15",
+    "jsr:@std/internal@^1.0.12": "1.0.12"
+  },
+  "jsr": {
+    "@cliffy/internal@1.0.0-rc.8": {
+      "integrity": "34cdf2fad9b084b5aed493b138d573f52d4e988767215f7460daf0b918ff43d8"
+    },
+    "@cliffy/keycode@1.0.0-rc.8": {
+      "integrity": "76dbf85a67ec0aea2e29ca049b8507b6b3f62a2a971bd744d8d3fc447c177cd9"
+    },
+    "@cliffy/keypress@1.0.0-rc.8": {
+      "integrity": "a75fa9ccf8e01ed3b0b6ec8c1392e89a6617f89e444b88024dce735f9d4dc562",
+      "dependencies": [
+        "jsr:@cliffy/internal",
+        "jsr:@cliffy/keycode"
+      ]
+    },
+    "@lambdalisue/ansi-escape-code@1.0.4": {
+      "integrity": "2058ff94ec566cdba4e8d8cff551c954cdff6969aa7caeebab69304c3d953761"
+    },
+    "@neabyte/deno-ansi@0.1.0": {
+      "integrity": "3affddb394ce77feb2c40b3d9f8ae3c2045f8bc721038c2d6610f09db37edf72"
+    },
+    "@std/assert@1.0.15": {
+      "integrity": "d64018e951dbdfab9777335ecdb000c0b4e3df036984083be219ce5941e4703b",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.12": {
+      "integrity": "972a634fd5bc34b242024402972cd5143eac68d8dffaca5eaa4dba30ce17b027"
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@cliffy/keypress@^1.0.0-rc.8",
+      "jsr:@lambdalisue/ansi-escape-code@^1.0.4",
+      "jsr:@neabyte/deno-ansi@0.1",
+      "jsr:@std/assert@1"
+    ]
+  }
+}
