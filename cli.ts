@@ -1,7 +1,6 @@
-import { Colors } from "@neabyte/deno-ansi";
-import { Terminal } from "@neabyte/deno-ansi";
+import { Terminal , Colors } from "@neabyte/deno-ansi";
 
-import { Option } from "./main.ts";
+import type { Option } from "./mod.ts";
 
 export async function getwidth(): Promise<number> {
   const { width } = await Terminal.getSize();

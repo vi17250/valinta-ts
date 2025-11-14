@@ -1,4 +1,5 @@
-import { keypress, KeyPressEvent } from "@cliffy/keypress";
+import { keypress } from "@cliffy/keypress";
+import type { KeyPressEvent } from "@cliffy/keypress";
 
 export enum KeyEnum {
   UP,

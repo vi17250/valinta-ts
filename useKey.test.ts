@@ -1,7 +1,7 @@
 import { assertEquals } from "@std/assert";
 import { useKey } from "./useKey.ts";
 import { KeyEnum } from "./keyPressMapper.ts";
-import { Option } from "./mod.ts";
+import type { Option } from "./mod.ts";
 
 Deno.test(function it_highlight_next_option() {
   const input: Option[] = [{

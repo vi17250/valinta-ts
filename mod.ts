@@ -51,6 +51,7 @@ export async function Select(values: string[]): Promise<string[]> {
 
     display(renderedOptions);
   }
+  
   return options.filter((option) => option.checked).map((option) =>
     option.value
   );
