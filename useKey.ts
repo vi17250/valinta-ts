@@ -1,8 +1,9 @@
 import { KeyEnum } from "./keyPressMapper.ts";
-import { Option } from "./main.ts";
+import type { Option } from "./mod.ts";
 
 export function useKey(options: Option[], keyEvent: KeyEnum): Option[] {
   const currentIndex = options.findIndex((option) => option.highlighted);
+  
   if (keyEvent == KeyEnum.DOWN) {
     options[currentIndex].highlighted = false;
     if (currentIndex == options.length - 1) options[0].highlighted = true;
