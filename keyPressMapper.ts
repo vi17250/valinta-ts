@@ -1,20 +1,17 @@
-import { keypress } from "@cliffy/keypress";
-import type { KeyPressEvent } from "@cliffy/keypress";
 
 export enum KeyEnum {
-  UP,
-  DOWN,
   ALL,
-  NONE,
-  INVERT,
-  ESC,
+  DOWN,
   ENTER,
-  TOGGLE,
+  ESC,
+  INVERT,
+  NONE,
   NULL,
+  TOGGLE,
+  UP,
 }
 
-export async function keyPress(): Promise<KeyEnum> {
-  const { key }: KeyPressEvent = await keypress();
+export function keyPressMapper(key: string | undefined): KeyEnum {
   let result;
   switch (key) {
     case "return":

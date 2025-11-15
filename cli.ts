@@ -1,23 +1,23 @@
-import { Terminal , Colors } from "@neabyte/deno-ansi";
-
-import type { Option } from "./mod.ts";
+import { Terminal } from "@neabyte/deno-ansi";
+import { keypress } from "@cliffy/keypress";
+import type { KeyPressEvent } from "@cliffy/keypress";
 
 export async function getwidth(): Promise<number> {
   const { width } = await Terminal.getSize();
   return width;
 }
 
-export async function display(options: Option[]) {
+export async function display(options: string[]) {
   for (const option of options) {
-    const checked = option.checked ? "[x]" : "[ ]";
-    const value = `${checked} ${option.value}`;
-    const raw = option.highlighted
-      ? Colors.bgRgb(value as string, 85, 170, 85)
-      : value;
     const encoder = new TextEncoder();
-    const data = encoder.encode(raw);
+    const data = encoder.encode(option);
     const newLine = encoder.encode("\n");
     await Deno.stdout.write(data);
     await Deno.stdout.write(newLine);
   }
+}
+
+export async function keyPressEvent(): Promise<string | undefined> {
+  const { key }: KeyPressEvent = await keypress();
+  return key;
 }

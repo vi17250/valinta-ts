@@ -1,8 +1,9 @@
 import { array, numberOfLines } from "./util.ts";
-import { display, getwidth } from "./cli.ts";
-import { KeyEnum, keyPress } from "./keyPressMapper.ts";
+import { display, getwidth, keyPressEvent } from "./cli.ts";
+import { KeyEnum, keyPressMapper } from "./keyPressMapper.ts";
 import { useKey } from "./useKey.ts";
 import { Cursor, Terminal } from "@neabyte/deno-ansi";
+import { format } from "./format.ts";
 
 export interface Option {
   checked: boolean;
@@ -24,10 +25,11 @@ export async function Select(values: string[]): Promise<string[]> {
     : options.findIndex((option) => option.highlighted);
 
   let renderedOptions = array(options, currentPosition, numberToRender);
-  display(renderedOptions);
+  display(format(renderedOptions));
 
   while (true) {
-    const key: KeyEnum = await keyPress();
+    const keyPressed = await keyPressEvent();
+    const key: KeyEnum = keyPressMapper(keyPressed);
     if (key === KeyEnum.ESC) Deno.exit(0);
     if (key === KeyEnum.ENTER) break;
 
@@ -49,7 +51,7 @@ export async function Select(values: string[]): Promise<string[]> {
       
     renderedOptions = array(options, currentPosition, numberToRender);
 
-    display(renderedOptions);
+    display(format(renderedOptions));
   }
   
   return options.filter((option) => option.checked).map((option) =>
