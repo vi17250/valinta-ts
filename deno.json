@@ -4,7 +4,7 @@
   "exports": "./mod.ts",
   "tasks": {
     "cov": "deno test --coverage=cov_profile",
-    "dev": "deno test --watch"
+    "test": "deno fmt && deno test --watch"
   },
   "license": "MIT",
   "imports": {
