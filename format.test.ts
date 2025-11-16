@@ -14,7 +14,7 @@ Deno.test(function it_returns_nothing_checked() {
     highlighted: false,
     value: "b",
   }];
-  
+
   const expected: string[] = [`${Colors.bgRgb(`[ ] a`, 85, 170, 85)}`, "[ ] b"];
   assertEquals(format(input), expected);
 });
@@ -29,7 +29,7 @@ Deno.test(function it_returns_first_value_checked() {
     highlighted: false,
     value: "b",
   }];
-  
+
   const expected: string[] = [`${Colors.bgRgb(`[x] a`, 85, 170, 85)}`, "[ ] b"];
   assertEquals(format(input), expected);
 });
@@ -44,7 +44,7 @@ Deno.test(function it_returns_second_value_checked() {
     highlighted: false,
     value: "b",
   }];
-  
+
   const expected: string[] = [`${Colors.bgRgb(`[ ] a`, 85, 170, 85)}`, "[x] b"];
   assertEquals(format(input), expected);
 });

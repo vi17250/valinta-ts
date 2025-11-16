@@ -48,12 +48,12 @@ export async function Select(values: string[]): Promise<string[]> {
     currentPosition = options.length < numberToRender
       ? 0
       : options.findIndex((option) => option.highlighted);
-      
+
     renderedOptions = array(options, currentPosition, numberToRender);
 
     display(format(renderedOptions));
   }
-  
+
   return options.filter((option) => option.checked).map((option) =>
     option.value
   );
