@@ -12,5 +12,8 @@
     "@cliffy/keypress": "jsr:@cliffy/keypress@^1.0.0-rc.8",
     "@lambdalisue/ansi-escape-code": "jsr:@lambdalisue/ansi-escape-code@^1.0.4",
     "@neabyte/deno-ansi": "jsr:@neabyte/deno-ansi@^0.1.0"
+  },
+  "fmt": {
+    "exclude": ["CHANGELOG.md"]
   }
 }
