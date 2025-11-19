@@ -4,6 +4,7 @@ import { KeyEnum } from "./keyPressMapper.ts";
 import type { Option } from "./mod.ts";
 
 Deno.test(function it_highlight_next_option() {
+  //Given
   const input: Option[] = [{
     checked: false,
     highlighted: true,
@@ -22,7 +23,12 @@ Deno.test(function it_highlight_next_option() {
     highlighted: true,
     value: "b",
   }];
-  assertEquals(useKey(input, KeyEnum.DOWN), expected);
+
+  // When
+  const action = useKey(input, KeyEnum.DOWN);
+
+  // Then
+  assertEquals(action, expected);
 });
 Deno.test(function it_highlight_first_option() {
   const input: Option[] = [{

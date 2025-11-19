@@ -5,6 +5,7 @@ import type { Option } from "./mod.ts";
 import { format } from "./format.ts";
 
 Deno.test(function it_returns_nothing_checked() {
+  // Given
   const input: Option[] = [{
     checked: false,
     highlighted: true,
@@ -15,11 +16,16 @@ Deno.test(function it_returns_nothing_checked() {
     value: "b",
   }];
 
+  // When
+  const formatted = format(input);
+
+  // Then
   const expected: string[] = [`${Colors.bgRgb(`[ ] a`, 85, 170, 85)}`, "[ ] b"];
-  assertEquals(format(input), expected);
+  assertEquals(formatted, expected);
 });
 
 Deno.test(function it_returns_first_value_checked() {
+  // Given
   const input: Option[] = [{
     checked: true,
     highlighted: true,
@@ -30,11 +36,16 @@ Deno.test(function it_returns_first_value_checked() {
     value: "b",
   }];
 
+  // When
+  const formatted = format(input);
+
+  // Then
   const expected: string[] = [`${Colors.bgRgb(`[x] a`, 85, 170, 85)}`, "[ ] b"];
-  assertEquals(format(input), expected);
+  assertEquals(formatted, expected);
 });
 
 Deno.test(function it_returns_second_value_checked() {
+  // Given
   const input: Option[] = [{
     checked: false,
     highlighted: true,
@@ -45,6 +56,10 @@ Deno.test(function it_returns_second_value_checked() {
     value: "b",
   }];
 
+  // When
+  const formatted = format(input);
+
+  // Then
   const expected: string[] = [`${Colors.bgRgb(`[ ] a`, 85, 170, 85)}`, "[x] b"];
-  assertEquals(format(input), expected);
+  assertEquals(formatted, expected);
 });
