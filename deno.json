@@ -1,5 +1,5 @@
 {
-  "name": "valinta-ts",
+  "name": "@vi17250/valinta-ts",
   "version": "0.2.0",
   "exports": "./mod.ts",
   "tasks": {
