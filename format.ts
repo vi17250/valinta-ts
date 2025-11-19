@@ -1,4 +1,4 @@
-import type { Option } from "valinta-ts";
+import type { Option } from "./mod.ts";
 import { Colors } from "@neabyte/deno-ansi";
 
 export function format(options: Option[]): string[] {

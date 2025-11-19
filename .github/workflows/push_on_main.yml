@@ -25,3 +25,15 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE }}
           config-file: .github/release-please-config.json
           manifest-file: .github/.release-please-manifest.json
+
+  publish:
+    needs:
+      - release-please
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - name: Publish package
+        run: npx jsr publish
