@@ -14,6 +14,6 @@
     "@neabyte/deno-ansi": "jsr:@neabyte/deno-ansi@^0.1.0"
   },
   "fmt": {
-    "exclude": ["CHANGELOG.md"]
+    "exclude": ["CHANGELOG.md", ".release-please-manifest.json"]
   }
 }
