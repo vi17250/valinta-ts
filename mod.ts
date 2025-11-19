@@ -27,6 +27,8 @@ export async function Select(values: string[]): Promise<string[]> {
   let renderedOptions = array(options, currentPosition, numberToRender);
   display(format(renderedOptions));
 
+  //A feature :p
+
   while (true) {
     const keyPressed = await keyPressEvent();
     const key: KeyEnum = keyPressMapper(keyPressed);

@@ -3,7 +3,7 @@
     ".": {
       "release-type": "simple",
       "extra-files": [
-        { "type": "json", "path": "./deno.json", "jsonpath": "$version" }
+        { "type": "json", "path": "./deno.json", "jsonpath": "$.version" }
       ]
     }
   },
