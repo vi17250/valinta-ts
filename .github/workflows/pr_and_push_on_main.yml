@@ -1,8 +1,8 @@
 name: _PR_ and _PUSH_ on main branch
 
 on:
-  push:
-    branches: ["main"]
+  # push:
+  #   branches: ["main"]
   pull_request:
     branches: ["main"]
 
