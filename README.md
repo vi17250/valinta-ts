@@ -4,9 +4,7 @@ Checkboxes in CLI for Deno runtime 🦕
 
 > valinta means _"Select"_ in Finnish
 
-🚨 This library is still in progress and not ready for productoin use 🚨
-
-## Exemple
+## Example
 
 ![valinta-ts](https://github.com/user-attachments/assets/5f1a7dbf-7385-4e70-9b34-a7357a9a4e62)
 
