@@ -1,0 +1,7 @@
+{
+  "packages": {
+    ".": {
+      "extra-files": ["deno.json"]
+    }
+  }
+}
