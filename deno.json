@@ -1,6 +1,6 @@
 {
   "name": "valinta-ts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "exports": "./mod.ts",
   "tasks": {
     "cov": "deno test --coverage=cov_profile",
@@ -14,6 +14,9 @@
     "@neabyte/deno-ansi": "jsr:@neabyte/deno-ansi@^0.1.0"
   },
   "fmt": {
-    "exclude": ["CHANGELOG.md", ".release-please-manifest.json"]
+    "exclude": [
+      "CHANGELOG.md",
+      ".release-please-manifest.json"
+    ]
   }
 }
