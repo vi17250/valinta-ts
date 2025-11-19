@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/vi17250/valinta-ts/compare/v1.1.0...v1.2.0) (2025-11-19)
+
+
+### Features
+
+* 🎸 a feature :p ([e897bd9](https://github.com/vi17250/valinta-ts/commit/e897bd909974aa4bbbc46bcfd9b8da74dc2067ad))
+
 ## [1.1.0](https://github.com/vi17250/valinta-ts/compare/v1.0.0...v1.1.0) (2025-11-19)
 
 
