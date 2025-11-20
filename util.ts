@@ -26,8 +26,8 @@ export function array<T>(values: T[], offset: number, length = 0): T[] {
 
 /**
  * Returns the number of lines needed based on the width parameter
- * @param {string} content 
- * @param {number} maxWidth 
+ * @param {string} content
+ * @param {number} maxWidth
  * @returns {number}
  */
 export function numberOfLines(content: string, maxWidth: number): number {

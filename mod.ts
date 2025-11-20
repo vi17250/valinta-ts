@@ -21,6 +21,11 @@ export interface Option {
 }
 
 /**
+ * Data structure returned
+ */
+type Rendered = [Array<string>, Array<number>];
+
+/**
  * The number of lines rendered in the terminal
  */
 const numberToRender: number = 11;
@@ -28,9 +33,9 @@ const numberToRender: number = 11;
 /**
  * Calls the library, display the data passed as argument and allows the user to select some of it
  * @param {string[]} values to display
- * @returns {Promise<string[]>} values selected
+ * @returns {Promise<Render>} values selected
  */
-export async function Select(values: string[]): Promise<string[]> {
+export async function Select(values: string[]): Promise<Rendered> {
   let options: Option[] = values.map((value: string, index: number) => {
     const highlighted = index == 0;
 
@@ -71,7 +76,11 @@ export async function Select(values: string[]): Promise<string[]> {
     display(format(renderedOptions));
   }
 
-  return options.filter((option) => option.checked).map((option) =>
-    option.value
-  );
+  return options.reduce((acc: Rendered, option, index) => {
+    if (option.checked) {
+      acc[0].push(option.value);
+      acc[1].push(index);
+    }
+    return acc;
+  }, [[], []]);
 }
