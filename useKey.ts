@@ -1,6 +1,17 @@
+/**
+ * A module that modifies a set of options based on user action
+ * @module
+ */
+
 import { KeyEnum } from "./keyPressMapper.ts";
 import type { Option } from "./mod.ts";
 
+/**
+ * A function that modifies a set of options based on user action
+ * @param {Option[]} options a set of options
+ * @param {KeyEnum} keyEvent a variant of KeyEnum enum
+ * @returns {Option[]}
+ */
 export function useKey(options: Option[], keyEvent: KeyEnum): Option[] {
   const currentIndex = options.findIndex((option) => option.highlighted);
 

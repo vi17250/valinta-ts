@@ -1,3 +1,8 @@
+/**
+ * A module that map key pressed
+ * @module
+ */
+
 export enum KeyEnum {
   ALL,
   DOWN,
@@ -10,6 +15,11 @@ export enum KeyEnum {
   UP,
 }
 
+/**
+ * Map key to KeyEnum
+ * @param {string|undefined} key
+ * @returns {KeyEnum}
+ */
 export function keyPressMapper(key: string | undefined): KeyEnum {
   let result;
   switch (key) {
