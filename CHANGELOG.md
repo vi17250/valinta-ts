@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/vi17250/valinta-ts/compare/v0.2.0...v1.0.0) (2025-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* 🧨 The structure of the returned data has changed,  it now also return s the indexes
+
+### Features
+
+* 🎸 Returns values and indexes ([ab7c6c1](https://github.com/vi17250/valinta-ts/commit/ab7c6c18afc376fba1fe13c7e001b3d290dabf33))
+
 ## [0.2.0](https://github.com/vi17250/valinta-ts/compare/v0.1.0...v0.2.0) (2025-11-19)
 
 
