@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/vi17250/valinta-ts/compare/v1.0.0...v1.0.1) (2025-12-25)
+
+
+### Bug Fixes
+
+* 🐛 doc: remove JSR link ([9f8cbfb](https://github.com/vi17250/valinta-ts/commit/9f8cbfb0b746f170eeb64abefa811e4f4ca3d9cf))
+* 🐛 include README.md ([6218559](https://github.com/vi17250/valinta-ts/commit/6218559ac6539943e458818169abc063d81cce87))
+
 ## [1.0.0](https://github.com/vi17250/valinta-ts/compare/v0.2.0...v1.0.0) (2025-11-20)
 
 
