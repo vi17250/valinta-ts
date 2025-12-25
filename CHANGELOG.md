@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/vi17250/valinta-ts/compare/v1.0.2...v1.0.3) (2025-12-25)
+
+
+### Bug Fixes
+
+* 🐛 update deno.json ([fe1eb75](https://github.com/vi17250/valinta-ts/commit/fe1eb75b3ce8a1e520af02d0a9365ef061b29daf))
+
 ## [1.0.2](https://github.com/vi17250/valinta-ts/compare/v1.0.1...v1.0.2) (2025-12-25)
 
 
