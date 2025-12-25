@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/vi17250/valinta-ts/compare/v1.0.1...v1.0.2) (2025-12-25)
+
+
+### Bug Fixes
+
+* 🐛 update readme ([87e04f6](https://github.com/vi17250/valinta-ts/commit/87e04f6266f9da660ceefe6da0e18ba3a1ad000a))
+
 ## [1.0.1](https://github.com/vi17250/valinta-ts/compare/v1.0.0...v1.0.1) (2025-12-25)
 
 
