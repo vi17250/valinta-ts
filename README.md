@@ -4,10 +4,6 @@
 
 **Checkboxes in CLI for [Deno](https://deno.com/) runtime 🦕**
 
-## 📺 Example
-
-![valinta-ts-gif](https://github.com/user-attachments/assets/12a14128-294b-422f-b8da-a9ad3ccd1861)
-
 ## 📚 Installation
 
 ```bash
