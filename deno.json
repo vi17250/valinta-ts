@@ -1,6 +1,6 @@
 {
   "name": "@vi17250/valinta-ts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "exports": "./mod.ts",
   "tasks": {
     "cov": "deno test --coverage=cov_profile",
