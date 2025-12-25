@@ -4,9 +4,9 @@
 
 **Checkboxes in CLI for [Deno](https://deno.com/) runtime 🦕**
 
-## 📺 Example
+<!-- ## 📺 Example
 
-![valinta-ts-gif](https://github.com/user-attachments/assets/12a14128-294b-422f-b8da-a9ad3ccd1861)
+![valinta-ts-gif](https://github.com/user-attachments/assets/12a14128-294b-422f-b8da-a9ad3ccd1861) -->
 
 ## 📚 Installation
 
@@ -43,6 +43,6 @@ const selected_animals = await Select(animals);
 | `n`      | remove all       |
 | `i`      | invert           |
 
-## 👀 See on the [JSR](https://jsr.io)
+<!-- ## 👀 See on the [JSR](https://jsr.io)
 
-[**https://jsr.io/@vi17250/valinta-ts**](https://jsr.io/@vi17250/valinta-ts)
+[**https://jsr.io/@vi17250/valinta-ts**](https://jsr.io/@vi17250/valinta-ts) -->
