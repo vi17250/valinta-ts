@@ -42,4 +42,3 @@ const selected_animals = await Select(animals);
 | `a`      | select all       |
 | `n`      | remove all       |
 | `i`      | invert           |
-
