@@ -42,3 +42,7 @@ const selected_animals = await Select(animals);
 | `a`      | select all       |
 | `n`      | remove all       |
 | `i`      | invert           |
+
+## 👀 See on the [JSR](https://jsr.io)
+
+[**https://jsr.io/@vi17250/valinta-ts**](https://jsr.io/@vi17250/valinta-ts)

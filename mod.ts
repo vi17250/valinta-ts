@@ -1,9 +1,3 @@
-/**
- * A tool for multiple selection in CLI
- * Written for Deno runtime ⭐
- * @module
- */
-
 import { array, numberOfLines } from "./util.ts";
 import { display, getwidth, keyPressEvent } from "./cli.ts";
 import { KeyEnum, keyPressMapper } from "./keyPressMapper.ts";
